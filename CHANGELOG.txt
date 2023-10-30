@@ -1,0 +1,12 @@
+7-1-23 MJC
+- Updated jamf2snipe from official github. This fixed a KeyError it was having but broke updates from Snipe-It to Jamf (Error code 415, jamf2snipe issue #99).
+
+7-5-23 MJC
+- Created forward-errorlogs.ps1 to parse and send logfiles to designated recipients on detected errors, adding a call in run-jamf2snipe.
+- Merged fixes from jamf2snipe issue #99 to fix response error code 415 when updating asset tags in JAMF.
+
+7-10-23 MJC
+- Added exclusion for response code 502 in forward-errorlogs.ps1.
+
+7-27-23 MJC
+- Add 'ussitservices@jhu.edu' to recipients in forward-errorlogs.ps1.
